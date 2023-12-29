@@ -1,0 +1,7 @@
+{
+  "name": "ejercicio-micpada",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
