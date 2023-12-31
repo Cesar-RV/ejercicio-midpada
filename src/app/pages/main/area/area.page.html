@@ -1,0 +1,29 @@
+<app-header title="Area de un Triangulo"></app-header>
+<ion-content>
+
+  <div class="d-flex-center-area">
+    <ion-icon name="play"></ion-icon>
+    <p class="style-text">Ingresa la base y altura de un triangulo</p>
+  </div>
+  <div class="d-flex-center-area">
+    <ion-item>
+      <ion-label position="floating">Base</ion-label>
+      <ion-input type="number" [(ngModel)]="base"></ion-input>
+    </ion-item>
+  </div>
+  <div class="d-flex-center-area">
+    <ion-item>
+      <ion-label position="floating">Altura</ion-label>
+      <ion-input type="number" [(ngModel)]="altura"></ion-input>
+    </ion-item>
+  </div>
+  <div class="d-flex-center-area">
+    <ion-button (click)="calcularAreaTriangulo()">Calcular Área</ion-button>
+  </div>
+  <div class="d-flex-center-area">
+    <div *ngIf="area !== undefined">
+      <p>El área del triángulo es: {{ area }}</p>
+    </div>
+  </div>
+
+</ion-content>
